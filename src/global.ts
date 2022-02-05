@@ -1,7 +1,8 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const colors = {
-    grayColorBackground: "#F2F3F4",
+    lightGrayColorBackground:"#F7F7F7",
+    mediumGrayColorBackground: "#F2F3F4",
     whiteColorBackground: "#FFFFFF",
     darkColorLetters: "#000000",
     lightColorLetters: "#6A737D",
@@ -25,6 +26,54 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     body { 
-        background-color: ${colors.grayColorBackground}
+        background-color: ${colors.lightGrayColorBackground};
+    }
+`
+export const Container = styled.div`
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @media(max-width: 1366px) {
+        padding: 0 1.5rem;
+    }
+
+    @media(max-width: 999px) {
+        padding: 0 1.2rem;
+    }
+`
+
+export const Wrapper = styled.div`
+    max-width: 1550px;
+    width: 100%;
+    max-height: 768px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+
+    margin-top: -2rem;
+
+    background-color: ${colors.whiteColorBackground};
+
+    @media(max-width: 1800px) {
+        max-width: 1160px;
+    }
+
+    @media(max-width: 1366px) {
+        max-width: 1050px;
+    }
+
+    @media(max-width: 999px) {
+        max-width: 850px;
+    }
+
+    @media(max-width: 576px) {
+        max-width: 700px;
+
     }
 `

@@ -1,8 +1,16 @@
+import { Header } from "./components/Header";
+import { Container, Wrapper } from "./global";
+
 function App() {
   return (
-    <div className="App">
-      Intial Project with TypeScript
-    </div>
+    <>
+      <Header />
+      <Container>
+        <Wrapper>
+          
+        </Wrapper>
+      </Container>
+    </>
   );
 }
 
