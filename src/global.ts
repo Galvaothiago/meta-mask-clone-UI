@@ -49,16 +49,14 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
     max-width: 1550px;
     width: 100%;
-    max-height: 768px;
-    height: 100%;
+    min-height: 738px;
+    height: auto;
 
     display: flex;
     flex-direction: column;
     gap: 0.15rem;
 
     margin-top: -2rem;
-
-    background-color: ${colors.whiteColorBackground};
 
     @media(max-width: 1800px) {
         max-width: 1160px;
