@@ -2,8 +2,8 @@ import { useState } from 'react'
 
 import { AccountInfo, Container, MessageCopy } from "./style"
 import { IoMdMore } from 'react-icons/io'
-import { FiCopy } from 'react-icons/fi'
 import { ReactComponent as CopyIcon } from '../../svg/copyicon.svg'
+
 const ACCOUNT_NUMBER = "0x5BccE5A4ae103e8eSDb6535781E661A21c533Fb6"
 
 export const Account: React.FC = () => {
