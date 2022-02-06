@@ -6,7 +6,8 @@ export const colors = {
     whiteColorBackground: "#FFFFFF",
     darkColorLetters: "#000000",
     lightColorLetters: "#6A737D",
-    blueColorLetters: "#037DD6"
+    blueColorLetters: "#037DD6",
+    grayBorderColor: "rgba(118, 118, 118, .3)"
 }
 
 export const GlobalStyle = createGlobalStyle`
@@ -54,7 +55,7 @@ export const Wrapper = styled.div`
 
     display: flex;
     flex-direction: column;
-    gap: 0.15rem;
+    gap: 0.12rem;
 
     margin-top: -2rem;
 
