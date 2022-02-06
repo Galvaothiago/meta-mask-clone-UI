@@ -76,3 +76,13 @@ export const Wrapper = styled.div`
 
     }
 `
+
+export const ContainerLisCoin = styled.div`
+    width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: .12rem;
+`

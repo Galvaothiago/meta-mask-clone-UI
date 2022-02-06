@@ -1,0 +1,22 @@
+[
+    {
+        "logoCurrency": "/assets/logo-bnb.png",
+        "nameCurrency": "BNB",
+        "balance": 2.048
+    },
+    {
+        "logoCurrency": "/assets/logo-bcoin.png",
+        "nameCurrency": "BCOIN",
+        "balance": 139.666
+    },
+    {
+        "logoCurrency": "/assets/logo-bitcoin.png",
+        "nameCurrency": "BTC",
+        "balance": 0.752
+    },
+    {
+        "logoCurrency": "/assets/logo-shiba-inu.png",
+        "nameCurrency": "SHIB",
+        "balance": 95850.011
+    }
+]
