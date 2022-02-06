@@ -34,7 +34,7 @@ export const Account: React.FC = () => {
 
     return (
         <Container>
-            <span>{/*created tag just to fill the space (using zero opacity)*/}</span>
+            <span>****</span>
             <AccountInfo onClick={copyCodeToClipboard}>
                 <p>Account 1</p>
                 <div>
