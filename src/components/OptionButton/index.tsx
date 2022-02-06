@@ -13,8 +13,9 @@ export const OptionButton: React.FC = () => {
     }
     return (
         <Container>
-            { options.map(option => (
-                <Button 
+            { options.map((option, index) => (
+                <Button
+                key={index} 
                     style={{ borderBottom: `${borderOption === option ? `2px solid ${colors.blueColorLetters}` : ''}`, 
                             color: `${borderOption === option ? `${colors.blueColorLetters}` : ''}`}} 
                     onClick={() => handleBorderButton(option)}

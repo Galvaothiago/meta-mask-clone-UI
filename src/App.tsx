@@ -17,7 +17,7 @@ function App() {
           <CurrencyDisplay />
           <OptionButton />
           <ContainerLisCoin>
-              { coins.map(coin => <ListCoin data={coin}/>) }
+              { coins.map((coin, index) => <ListCoin key={index} data={coin}/>) }
           </ContainerLisCoin>
         </Wrapper>
       </Container>
