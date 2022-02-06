@@ -83,7 +83,7 @@ export const AccountInfo = styled.div`
     }
 `
 
-export const Message = styled.div<TextCopyProp>`
+export const MessageCopy = styled.div<TextCopyProp>`
     padding: .3rem .7rem;
 
     background-color: ${colors.darkColorLetters};

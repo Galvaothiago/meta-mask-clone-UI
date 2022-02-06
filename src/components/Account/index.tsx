@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import { AccountInfo, Container, Message } from "./style"
+import { AccountInfo, Container, MessageCopy } from "./style"
 import { IoMdMore } from 'react-icons/io'
 import { FiCopy } from 'react-icons/fi'
 
@@ -8,14 +8,6 @@ const ACCOUNT_NUMBER = "0x5BccE5A4ae103e8eSDb6535781E661A21c533Fb6"
 
 export const Account: React.FC = () => {
     const [ textCopy, setTextCopy ] = useState<String>("Copy to clipboard!")
-
-    const handleCopyClick = () => {
-        setTextCopy("Copied!")
-
-        setTimeout(() => {
-            setTextCopy("Copy to clipboard")
-        }, 4500)
-    }
 
     const trucateNumberAccount = (accountNumber: String): String => {
         const totalLetters = accountNumber.length
@@ -26,16 +18,30 @@ export const Account: React.FC = () => {
         return `${partFirst}...${partSecond}`
     }
 
+    const copyCodeToClipboard = () => {
+        if(!navigator.clipboard) {
+            setTextCopy("Do not supported")
+            return
+        }
+
+        navigator.clipboard.writeText(ACCOUNT_NUMBER)
+        setTextCopy("Copied!")
+
+        setTimeout(() => {
+            setTextCopy("Copy to clipboard")
+        }, 4500)
+    }
+
     return (
         <Container>
-            <span>test</span>
-            <AccountInfo onClick={handleCopyClick}>
+            <span>{/*created tag just to fill the space (using zero opacity)*/}</span>
+            <AccountInfo onClick={copyCodeToClipboard}>
                 <p>Account 1</p>
                 <div>
                     <span>{trucateNumberAccount(ACCOUNT_NUMBER)}</span>
                     <FiCopy />
                 </div>
-                <Message position={String(textCopy)}>{textCopy}</Message>
+                <MessageCopy position={String(textCopy)}>{textCopy}</MessageCopy>
             </AccountInfo>
             <IoMdMore />
         </Container>
