@@ -20,7 +20,7 @@ export const Button = styled.button`
     border: none;
     background-color: ${colors.whiteColorBackground};
 
-    color: ${colors.blueColorLetters};
+    color: ${colors.lightColorLetters};
     font-size: .9rem;
     font-weight: 400;
     cursor: pointer;
