@@ -25,6 +25,7 @@ export const Container = styled.main`
 
     span {
         font-size: 2rem;
+        font-weight: 500;
     }
 `
 
@@ -53,7 +54,6 @@ export const ContainerButton = styled.div`
         font-weight: 400;
         color: ${colors.blueColorLetters};
     }
-
 `
 
 export const Icon = styled.div`
