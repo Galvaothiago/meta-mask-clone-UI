@@ -13,6 +13,10 @@ export const Container = styled.section`
 
     background-color: ${colors.whiteColorBackground};
 
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 3px 1px rgba(0,0,0,0.1);
+
     div {
         display: flex;
         flex-direction: column;
@@ -28,7 +32,6 @@ export const Container = styled.section`
         span {
             color: ${colors.blueColorLetters};
             transition: filter .2s;
-
 
             &:hover {
                 filter: brightness(1.3);

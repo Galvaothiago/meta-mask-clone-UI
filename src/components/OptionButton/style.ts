@@ -3,7 +3,7 @@ import { colors } from "../../global";
 
 export const Container = styled.div`
     width: 100%;
-    height: 3.1rem;
+    min-height: 3.1rem;
     display: flex;
 
     background-color: ${colors.whiteColorBackground};
