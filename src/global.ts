@@ -50,7 +50,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
     max-width: 1550px;
     width: 100%;
-    min-height: 738px;
+    /* min-height: 738px; */
     height: auto;
 
     display: flex;
