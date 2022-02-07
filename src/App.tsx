@@ -7,6 +7,7 @@ import { Container, ContainerLisCoin, Wrapper } from "./global";
 import coins from '../src/coins.json'
 import { ListCoin } from "./components/ListCoin";
 import { ImportToken } from "./components/ImportToken";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               { coins.map((coin, index) => <ListCoin key={index} data={coin}/>) }
           </ContainerLisCoin>
           <ImportToken />
+          <Footer />
         </Wrapper>
       </Container>
     </>

@@ -50,7 +50,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
     max-width: 1550px;
     width: 100%;
-    /* min-height: 738px; */
+    min-height: 738px;
     height: auto;
 
     display: flex;
@@ -58,6 +58,7 @@ export const Wrapper = styled.div`
     gap: 0.12rem;
 
     margin-top: -2rem;
+    padding-bottom: 2rem;
 
     @media(max-width: 1800px) {
         max-width: 1160px;
