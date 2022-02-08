@@ -17,6 +17,7 @@ export const GlobalStyle = createGlobalStyle`
         box-sizing: border-box;
         font-family: 'Roboto', 'Ubuntu', sans-serif;
     }
+
     html {
         @media(max-width: 1080px) {
             font-size: 93.75%;
@@ -26,8 +27,10 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
-    body { 
+    body {
         background-color: ${colors.lightGrayColorBackground};
+
+        overflow-x: hidden;
     }
 `
 export const Container = styled.div`
@@ -78,7 +81,7 @@ export const Wrapper = styled.div`
     }
 `
 
-export const ContainerLisCoin = styled.div`
+export const ContainerListCoin = styled.div`
     width: 100%;
     height: auto;
 

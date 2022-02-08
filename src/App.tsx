@@ -2,7 +2,7 @@ import { Account } from "./components/Account";
 import { CurrencyDisplay } from "./components/CurrencyDisplay";
 import { Header } from "./components/Header";
 import { OptionButton } from "./components/OptionButton";
-import { Container, ContainerLisCoin, Wrapper } from "./global";
+import { Container, ContainerListCoin, Wrapper } from "./global";
 
 import coins from '../src/coins.json'
 import { ListCoin } from "./components/ListCoin";
@@ -18,9 +18,9 @@ function App() {
           <Account />
           <CurrencyDisplay />
           <OptionButton />
-          <ContainerLisCoin>
+          <ContainerListCoin>
               { coins.map((coin, index) => <ListCoin key={index} data={coin}/>) }
-          </ContainerLisCoin>
+          </ContainerListCoin>
           <ImportToken />
           <Footer />
         </Wrapper>
